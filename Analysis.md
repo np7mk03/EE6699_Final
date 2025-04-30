@@ -40,7 +40,8 @@ We examine three posterior approximation methods:
 - **Standard ResNet**: A conventional residual network architecture
 - **Wide ResNet (WRN)**: A variant of ResNet with increased width (more channels per layer)
 
-The models were trained for 100 epochs, with performance metrics recorded at each epoch.
+The models were trained for 100 epochs, with performance metrics recorded at each epoch. (training details: batch size=64, optimizer=SGD, scheduler: CosineAnnealingLR, marginallikelihood batch size=8, hyperstep=5)
+The models were trained on CIFAR-10 dataset with a subset of 20000.
 
 ### Metrics
 
